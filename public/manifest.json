@@ -1,0 +1,39 @@
+{
+    "name": "PhotoApp",
+    "short_name": "Photos",
+    "description": "Application for saving and reviewing photos",
+    "display": "fullscreen",
+    "theme_color": "red",
+    "background_color": "#DDD",
+    "start_url": "/index.html",
+    "scope": ".",
+    "orientation": "portrait-primary",
+    "dir": "ltr",
+    "lang": "en-US",
+    "prefer_related_applications": true,
+    "related_applications": [
+      {
+        "platform": "webapp",
+        "url": "https://edgar.fer.hr",
+        "id": "hr.fer.edgar"
+      }
+    ],
+    "icons": [
+        {
+            "src": "assets/img/logo.png",
+            "sizes": "512x512"
+        }
+    ],
+    "screenshots": [
+      {
+        "src": "/assets/img/logo.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/assets/img/logo.png",
+        "sizes": "512x512"
+      }
+    ]
+  }

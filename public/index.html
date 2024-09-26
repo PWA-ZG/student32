@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <link rel="stylesheet" href="./assets/site.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="./favicon.ico" sizes="32x32">
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo.png" alt="logo">
+        <h1>Photos</h1>
+    </header>
+
+    <div class="text">
+        <p>This is a web site where you can take photos with your camera and upload them. Also you can review them all later in the gallery.</p>
+        <p>This web site is installable and it can be used offline to some degree.</p>
+    </div>
+
+    <button onclick="window.location.href = './camera.html';">Camera</button>
+    <a href="/pictures">
+        <button>Gallery</button>
+    </a>
+
+    <script>
+        navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW registered', reg))
+            .catch(err => console.error('SW registration error', err));
+    </script>
+</html>

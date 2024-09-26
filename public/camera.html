@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <link rel="stylesheet" href="./assets/site.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="./favicon.ico" sizes="32x32">
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo.png" alt="logo">
+        <h1>Camera</h1>
+    </header>
+
+    <div class="center-container">
+        <div id="beforeSnap">
+            <video id="player" width="100%" autoplay></video>
+            <button id="btnSnap">Capture</button>
+        </div>
+
+        <div id="afterSnap">
+            <canvas id="cnv"></canvas>
+            <div>
+                <input id="snapName" type="text" placeholder="Photo caption">
+                <button id="btnUpload">Upload</button>
+            </div>
+        </div>
+
+        <div id="fileUpload">
+            <input type="file" accept="image/*" id="fileInput">
+            <input id="uploadFile" type="text" placeholder="Photo caption">
+            <button id="fileUpload"></button>
+        </div>
+    </div>
+
+    <div>
+        <a href="/pictures">
+            <button>Gallery</button>
+        </a>
+        <button onclick="window.location.href = './index.html';">Home</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
